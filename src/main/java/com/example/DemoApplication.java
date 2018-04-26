@@ -18,7 +18,7 @@ public class DemoApplication {
   @RequestMapping("/offers")
   @ResponseBody
   String hello() {
-    return "Hello from Heroku!";
+    return "[{\"id\":\"1\",\"name\":\"Voice Unlimited 30 days\"},{\"id\":\"2\",\"name\":\"Data Unlimited 4MB\"}]";
   }
 
   public static void main(String[] args) {
