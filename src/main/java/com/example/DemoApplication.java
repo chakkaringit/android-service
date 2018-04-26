@@ -12,10 +12,10 @@ public class DemoApplication {
   @RequestMapping("/")
   @ResponseBody
   String home() {
-    return "Hello! This is a demo application linked to this tutorial: http://jkutner.github.io/2016/08/18/android-backend-api-heroku-retrofit.html";
+    return "[{\"id\":\"1\",\"name\":\"Voice Unlimited 30 days\"},{\"id\":\"2\",\"name\":\"Data Unlimited 4MB\"}]";
   }
 
-  @RequestMapping("/hello")
+  @RequestMapping("/offers")
   @ResponseBody
   String hello() {
     return "Hello from Heroku!";
